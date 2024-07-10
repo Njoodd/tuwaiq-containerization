@@ -22,11 +22,11 @@ spec:
             - containerPort: 80
               protocol: TCP
           env:
-          - name: HEADER_COLOR
-            valueFrom:
-              configMapKeyRef:
-                name: application-config
-                key: header_color
+            - name: HEADER_COLOR
+              valueFrom:
+                configMapKeyRef:
+                  name: application-config
+                  key: header_color
             - name: BODY_COLOR
               valueFrom:
                 configMapKeyRef:
