@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: njood-db
+  name: njood-db-svc
   namespace: njood-ns
   labels:
     app: wordpress
