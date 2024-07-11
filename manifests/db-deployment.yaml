@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: njood-wordpress
+  name: njood-wordpress-db
   namespace: njood-ns
   labels:
     app: wordpress
