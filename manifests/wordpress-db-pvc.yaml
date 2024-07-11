@@ -7,7 +7,6 @@ metadata:
     app: wordpress
 spec:
   storageClassName: ""
-  volumeName: foo-pv
 spec:
   accessModes:
     - ReadWriteOnce
