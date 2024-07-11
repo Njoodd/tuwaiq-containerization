@@ -8,16 +8,9 @@ metadata:
 spec:
   storageClassName: ""
   volumeName: foo-pv
-----
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: mysql-pv
-  namespace: njood-ns
-  labels:
-    app: wordpress
 spec:
-  storageClassName: ""
-  claimRef:
-    name: mysql-pvc
-    namespace: njood-ns
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
