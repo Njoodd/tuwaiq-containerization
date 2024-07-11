@@ -5,6 +5,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
   labels:
     app.kubernetes.io/instance: nj-wordpress-app
+    app: wordpress
   name: wordpress-ingress
   namespace: njood-ns
 spec:
