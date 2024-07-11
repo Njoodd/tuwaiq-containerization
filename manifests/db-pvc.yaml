@@ -6,6 +6,13 @@ metadata:
   labels:
     app: wordpress
 spec:
+  ignoreDifferences:
+  - jsonPointers:
+    - /spec/volumeName
+    kind: PersistentVolumeClaim
+  syncPolicy:
+    syncOptions:
+      - RespectIgnoreDifferences=true
   accessModes:
     - ReadWriteOnce
   resources:
